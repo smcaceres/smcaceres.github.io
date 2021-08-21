@@ -1,0 +1,78 @@
+/*Header*/
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/*Nav*/
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+li {
+    display: inline;
+}
+
+/*Hero*/
+.hero {
+    background-image: url(./images/2001677629409.jpg);
+    position: top;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero p{
+    color: #ffff
+    ;
+}
+
+/*Content*/
+.about-me, .work, .contact-me {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+    height: 100%;
+ 
+}
+.about-me {
+    background: chartreuse;
+}
+
+.top, .middle, .card-1, .card-2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    height: 100%;
+}
+
+.about-me p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/*footer */
+
+.labels, .values{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    order: 99;
+
+}
