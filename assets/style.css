@@ -1,25 +1,31 @@
 /*Header*/
 header {
-    padding: 20px 35px;
-    display: flex;
-    justify-content: space-between;
+  background-color: rgb(187, 230, 193);
+  font-family: sans-serif;
+  position: sticky;
+  top: 0;
     
 }
 
-/*Nav*/
-.nav {
-    display: flex;
-    justify-content: space-evenly;
+.subtitle {
+    font-family: 'Pacifico', 'cursive';
+    color: black;
+    ;
 }
-li {
-    display: inline;
+/*Nav*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    order: 99;
+    
 }
 
 /*Hero*/
 .hero {
     background-image: url(./images/2001677629409.jpg);
     position: top;
-    height: auto;
+    height: 300px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -45,14 +51,19 @@ li {
  
 }
 .about-me {
-    background: chartreuse;
+    background: rgb(138, 176, 194);  
+}
+.work {
+    background: cornflowerblue;
+}
+.contact-me {
+    background: aquamarine;
 }
 
-.top, .middle, .card-1, .card-2 {
+.top p {
     display: flex;
-    justify-content: flex-end;
-    width: 20%;
-    height: 100%;
+    justify-content: right;
+    text-align: justify;
 }
 
 .about-me p {
@@ -60,9 +71,12 @@ li {
     justify-content: flex-end;
 }
 
-.card-1 {
+.card-1, .card-2 {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+    justify-content: space-evenly;
+
 }
 
 
@@ -73,6 +87,5 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    order: 99;
-
+    align-items: flex-end;
 }
