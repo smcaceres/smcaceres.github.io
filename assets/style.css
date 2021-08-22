@@ -121,4 +121,12 @@ nav ul li a {
     color: #002861;
 }
 
+.footer a {
+    flex-direction: row;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    margin: auto 3em;
+}
+
 
