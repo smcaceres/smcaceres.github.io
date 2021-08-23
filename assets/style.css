@@ -1,27 +1,21 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: #d1e2fc;
 }
 /*container*/
 .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    display: flexbox;
+    flex-direction: row;
+    gap: 15px
+    
+;
 }
 
 /*Header*/
 .header {
-    grid-area: 1 / 1 / 2 / 6; 
-    align-items: center;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-evenly;
+    padding: 15px;
+    align-items: center;
     background: rgb(8,54,116);
     background: linear-gradient(90deg, rgba(8,54,116,1) 0%, rgba(0,71,171,1) 38%, rgba(109,149,207,1) 93%);
     color: #ffff;
@@ -34,102 +28,96 @@ h1 {
 }
 
 
-/*Nav*/
+/*Navigation*/
 
 .header nav ul {
-    list-style-type: none;
     display: flex;
-    flex-direction: row;  
-    flex-wrap: wrap;
+    list-style-type: none;  
 }
 
 nav ul li a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     color: #ffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
     list-style: none;
-    display: inline-block;
     text-decoration: none;
-
     margin: auto 3em;
 }
 
 /*Hero*/
 .hero {
-    grid-area: 2 / 1 / 3 / 6;
+    display: flex;    
     background-image: url("./images/Colbalt6-9a.jpg");
     background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-    position: top;
-    background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
 }
 
-.hero h2{
-
-    font-family: 'Pacifico', 'cursive';
-    display: flex;
-    color: #ffff;
-    font-size: 75px;
+.hero h2 {
     display: flex;
     justify-content: flex-end;
-    order: 3;   
+    align-items: flex-end;
+    font-family: 'Pacifico', 'cursive';
+    color: #ffff;
+    font-size: 75px;
 }
 
 /*about me*/
+
+.about-me, .work, .contact-me{
+    display: flex;
+    justify-content: flex-start;
+    width: 25%;
+    height: 200px;
+}
 .about-me {
-    grid-area: 3 / 1 / 5 / 2;
     background-color: #002861;
     color: #ffff;
 }
 
 .aboutme-answers {
-    grid-area: 3 / 2 / 5 / 5;
-    text-align: justify;
+    display: flex;
+    justify-content: flex-end;
     font-family: Arial, Helvetica, sans-serif;
+    width: 75%;
 }
 
 .work {
-    grid-area: 5 / 1 / 7 / 2;
     background-color: #0047ab;
     color: #ffff;
     
 }
 
 .work-answers {
-    grid-area: 5 / 2 / 7 / 5;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    max-width: 940px;
 }
 
 .contact-me {
-    grid-area: 7 / 1 / 8 / 2;
     background-color: #6d95cf;
     color: #ffff;
 }
 
 /*footer */
 .footer {
-    grid-area: 7 / 2 / 8 / 5;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
     color: #002861;
+    font-size: 20px;
 }
 
 .footer a {
-    flex-direction: row;
     list-style: none;
     display: inline-block;
     text-decoration: none;
     margin: auto 3em;
+    
 }
 
 
