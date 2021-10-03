@@ -9,7 +9,6 @@
 body {
   background-color: #e6f0ff;
   margin: 25px;
-  
 }
 
 /*Header*/
@@ -25,7 +24,12 @@ header {
   color: #ffff;
 }
 
+header img{
+    margin: 25px;
+}
+
 header h1 {
+  padding: 25px;
   margin: 25px;
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
@@ -88,16 +92,14 @@ nav ul li a {
   padding: 25px;
 }
 
-.featured a {
+.featured, .work-answers a {
   color: #fff;
-}
-.work-answers a {
-  color: #fff;
+  padding-bottom: 100%;
 }
 
 /*footer */
 footer {
-    padding: 25px;
+  padding: 25px;
   background-color: #6d95cf;
   font-family: Arial, Helvetica, sans-serif;
   color: #002861;
