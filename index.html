@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -14,23 +14,26 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="header row">
-            <div class="title col-4">
-                <img src="assets/images/avatar-modified.png" width="200" height="200" />
-                <h1 class="col-2">Sandra's Portfolio</h1>
-            </div>
-            <nav class="col-10">
-                <ul class="nav justify-content-end">
-                    <li class="nav-link active"><a href="#about-me">About Me</a></li>
-                    <li class="nav-link active"><a href="#work">Work</a></li>
-                    <li class="nav-link active"><a href="#contact-me">Contact Me</a></li>
-                    <li class="nav-link active"><a href="https://www.linkedin.com/in/smcaceres/"
-                            class="col-8">Resume</a></li>
-                </ul>
-            </nav>
+
+    <header>
+        <div class="row">
+        <div class="title col-2">
+            <img src="assets/images/avatar-modified.png" width="200" height="200" />
+            <h1 class="col-10">Sandra's Portfolio</h1>
         </div>
     </div>
+    <div class="row">
+        <nav class="col-10">
+            <ul class="nav justify-content-end">
+                <li class="nav-link active"><a href="#about-me">About Me</a></li>
+                <li class="nav-link active"><a href="#work">Work</a></li>
+                <li class="nav-link active"><a href="#contact-me">Contact Me</a></li>
+                <li class="nav-link active"><a href="https://www.linkedin.com/in/smcaceres/">Resume</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
 
     <div class="hero">
         <h2>Welcome</h2>
@@ -40,33 +43,42 @@
         <div class="row">
             <h2 class="col-2">About Me</h2>
             <div class="aboutme-answers col-10">
-                <p>Hi, I'm Sandra, an allround web developer with good knowledge of front-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more. As the saying goes: 'two heads are better than one'.</p>
-                <p>I was born in Guatemala and my family immigrated to this country when I was five years old. I grew up in Los Angeles and the Jetsons was my favorite cartoon because technology has always intrigued me. When I was little, I thought that by the time I became an adult, the world would be just like the Jetsons. Society has made some strides but I hope contribute to technology.</p>
+                <p>Hi, I'm Sandra, an allround web developer with good knowledge of front-end techniques. I love
+                    structure and order and I also stand for quality. I love spending time on fixing little details
+                    and optimizing web apps. Also I like working in a team, you'll learn faster and much more. As
+                    the saying goes: 'two heads are better than one'.</p>
+                <p>I was born in Guatemala and my family immigrated to this country when I was five years old. I
+                    grew up in Los Angeles and the Jetsons was my favorite cartoon because technology has always
+                    intrigued me. When I was little, I thought that by the time I became an adult, the world would
+                    be just like the Jetsons. Society has made some strides but I hope contribute to technology.</p>
             </div>
         </div>
     </div>
 
-    <div class="work">
+    <div class="work grid-container">
         <div class="row">
             <h2 class="col-2">Work</h2>
             <div class="work-answers" class="col-10">
-                <p>Run Buddy</p>
-                <a href="https://missroseblue.github.io/run-buddy/"><img src="assets/images/runbuddy.jpg"
-                        class="img-thumbnail" alt="Run Buddy website" height="1000" width="800"></a>
-                <p>Horiseon</p>
-                <a href="https://missroseblue.github.io/horiseon/"><img src="assets/images/horiseon.jpg"
-                        class="img-thumbnail" alt="Horeseon Website" height="1000" width="800"></a>
+                <!-- <p>Run Buddy</p> -->
+
+                <a href="https://missroseblue.github.io/run-buddy/">Run Buddy<img src="assets/images/runbuddy.jpg"
+                        class="img-thumbnail" alt="Run Buddy website" height="800" width="600"></a>
+                <!-- <p>Horiseon</p> -->
+                <a href="https://missroseblue.github.io/horiseon/">Horiseon<img src="assets/images/horiseon.jpg"
+                        class="img-thumbnail" alt="Horeseon Website" height="800" width="600"></a>
             </div>
         </div>
         <div class="row">
             <div class="col-2"></div>
             <div class="featured class=col-10">
-                <p>UCSB Testing Center</p>
-                <a href="https://testingcenter.ucsb.edu"><img src="assets/images/2021-08-22_09-55-39.jpg"
-                        class="img-thumbnail" alt="UCSB Testing Center" height="1000" width="800"> </a>
-                        <p>Tempo Finder</p>
-                        <a href="https://missroseblue.github.io/tempo-finder/"><img src="assets/images/tempo-finder.png"
-                        class="img-thumbnail" alt="Tempo Finder" height="1000" width="800"> </a>
+                <!-- <p>UCSB Testing Center</p> -->
+                <a href="https://testingcenter.ucsb.edu">UCSB Testing Center<img
+                        src="assets/images/2021-08-22_09-55-39.jpg" class="img-thumbnail" alt="UCSB Testing Center"
+                        height="800" width="600"> </a>
+                <!-- <p>Tempo Finder</p> -->
+                <a href="https://missroseblue.github.io/tempo-finder/">Tempo Finder<img
+                        src="assets/images/tempo-finder.png" class="img-thumbnail" alt="Tempo Finder" height="800"
+                        width="600"> </a>
             </div>
         </div>
     </div>
@@ -74,7 +86,7 @@
     <footer class="contact-me">
         <div class="row">
             <h2 class="col-2"> Contact Me</h2>
-            <div class="contactInfo justify-content-end col-10">
+            <div class="contactInfo justify-content-end col-10 nav">
                 <li class="nav-link active"><a href="tel:8189836943">818.983.6943</a></li>
                 <li class="nav-link active"><a href="mailto:missroseblue@gmail.com">Email</a></li>
                 <li class="nav-link active"><a href="https://github.com/missroseblue">GitHub</a></li>
@@ -82,7 +94,7 @@
             </div>
         </div>
     </footer>
-    </div>
+
 </body>
 
 </html>
