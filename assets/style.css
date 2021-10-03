@@ -1,45 +1,48 @@
-body {
-    background-color: #d1e2fc;
+:root {
+    --cobaltBlue: rgba(0,71,171);
+    --darkBlue: rgba(8,54,116);
+    --lightBlue: rgba(109,149,207);
+    --white: #fff;
+    --black: #000;
 }
+
+body {
+    background-color: #e6f0ff;
+}
+
 /*container*/
 .container {
-    display: flexbox;
-    flex-direction: row;
-    gap: 15px
-    
-;
+    gap: 15px;
 }
 
 /*Header*/
 .header {
-    display: flex;
-    justify-content: space-evenly;
+    display: inline-block;
+    width: 100%;
     padding: 15px;
-    align-items: center;
     background: rgb(8,54,116);
     background: linear-gradient(90deg, rgba(8,54,116,1) 0%, rgba(0,71,171,1) 38%, rgba(109,149,207,1) 93%);
     color: #ffff;
 }
 
-h1 {
-    margin: 15px;
+.header h1 {
+    margin: 25px;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif; 
 }
 
-
 /*Navigation*/
+.header nav{
+    color: #fff;
+}
 
 .header nav ul {
-    display: flex;
     list-style-type: none;  
 }
 
-nav ul li a {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    color: #ffff;
+nav ul li {
+    color: #fff;
+    display: inline;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     list-style: none;
@@ -49,16 +52,14 @@ nav ul li a {
 
 /*Hero*/
 .hero {
-    display: flex;    
+    
     background-image: url("./images/Colbalt6-9a.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .hero h2 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    margin: 25px;
     font-family: 'Pacifico', 'cursive';
     color: #ffff;
     font-size: 75px;
@@ -66,58 +67,34 @@ nav ul li a {
 
 /*about me*/
 
-.about-me, .work, .contact-me{
-    display: flex;
-    justify-content: flex-start;
-    width: 25%;
-    height: 200px;
-}
-.about-me {
-    background-color: #002861;
+.about-me, .work, .contact-me {
     color: #ffff;
 }
 
-.aboutme-answers {
-    display: flex;
-    justify-content: flex-end;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 75%;
+.about-me {
+    background-color: #002861;
+    
 }
 
 .work {
     background-color: #0047ab;
-    color: #ffff;
     
 }
 
-.work-answers {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    max-width: 940px;
-}
-
-.contact-me {
-    background-color: #6d95cf;
-    color: #ffff;
-}
-
 /*footer */
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+footer {
+    background-color: #6d95cf;
     font-family: Arial, Helvetica, sans-serif;
     color: #002861;
     font-size: 20px;
 }
 
-.footer a {
-    list-style: none;
-    display: inline-block;
-    text-decoration: none;
-    margin: auto 3em;
-    
+footer nav ul {
+    list-style-type: none;  
 }
 
-
+footer li {
+    list-style: none;
+    text-decoration: none;
+    color: var(--darkBlue);
+}
