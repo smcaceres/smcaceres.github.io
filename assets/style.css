@@ -92,7 +92,11 @@ nav ul li a {
   padding: 25px;
 }
 
-.featured, .work-answers a {
+.featured a {
+  color: #fff;
+  padding-bottom: 100%;
+}
+.work-answers a {
   color: #fff;
   padding-bottom: 100%;
 }
