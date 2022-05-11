@@ -1,4 +1,4 @@
-# missroseblue.github.io
+# smcaceres.github.io
 
 ## Purpose
 Hi, I'm Sandra, a freelance software engineer specialized in both front-end and back-end.
@@ -9,7 +9,7 @@ Hi, I'm Sandra, a freelance software engineer specialized in both front-end and 
 * Bootstrap
 
 ## Website
-https://missroseblue.github.io/
+https://smcaceres.github.io/
 
 ## Contribution
 Made with ❤️ by Sandra Caceres
